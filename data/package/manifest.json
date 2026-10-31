@@ -1,0 +1,27 @@
+{
+  "package_name": "ECHO Synthetic Finance Incident Dataset",
+  "schema_version": "1.0",
+  "generated_at": "2026-10-30",
+  "synthetic_only": true,
+  "baseline_record_count": 5000,
+  "history_run_count": 20,
+  "history_batch_count": 200,
+  "evaluation_case_count": 5,
+  "development_case_count": 5,
+  "held_out_case_count": 0,
+  "case_family_counts": {
+    "healthy": 1,
+    "recoverable": 2,
+    "quarantine_or_review": 2
+  },
+  "currency": "SAR",
+  "money_unit": "halalas",
+  "baseline_seed": 20261030,
+  "data_contract_notes": [
+    "Scenario patches represent a fixture state, not a complete production sync engine.",
+    "No hidden answers are included in this package.",
+    "History files contain healthy historical runs; scenario loader must materialize the affected incident run/batch evidence and must not infer hidden onset from scenario_setup fields.",
+    "Patch setup metadata is for fixture loader only, never agent tools.",
+    "Destination mutation sequence and source trust events must be applied consistently by loader."
+  ]
+}

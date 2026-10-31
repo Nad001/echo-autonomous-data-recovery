@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "case_id": "SCENARIO-03",
+  "pipeline_id": "finance-to-analytics",
+  "execution_run_id": "RUN-SCENARIO-03",
+  "scenario_setup": {"kind": "partial_text_corruption", "seed": 20310003, "first_modified_batch_seq": 1},
+  "destination_mutations": [
+    {"record_id": "TX-000002", "field": "description", "operation": "set", "value": "Bank transfe", "note": "text truncation: final character removed"},
+    {"record_id": "TX-000003", "field": "description", "operation": "set", "value": "Sppulier payment", "note": "text substitution: adjacent characters transposed"},
+    {"record_id": "TX-000004", "field": "description", "operation": "set", "value": "Refnd", "note": "text loss: interior character removed"}
+  ]
+}

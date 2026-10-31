@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "incident_id": "INC-FEATURED-COMPLETE",
+  "pipeline_id": "finance-to-analytics",
+  "run_id": "RUN-0020",
+  "detected_at": "2026-11-05T19:03:00Z",
+  "severity": "critical",
+  "execution_status": "succeeded",
+  "integrity_status": "corrupted",
+  "monitor_findings": {"discrepancy_count": 5000, "scope": "all records", "alert_rule": "source_destination_integrity"},
+  "message": "All synchronized transaction amounts differ from the trusted source while the active transformation remains faulty."
+}

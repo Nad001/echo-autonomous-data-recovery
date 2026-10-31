@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "active_scenarios": [
+    {
+      "case_id": "SCENARIO-01",
+      "title": "Healthy Synchronization",
+      "category": "Healthy baseline",
+      "data_type": "Numerical and text fields",
+      "description": "5,000 trusted records synchronize without corruption.",
+      "patch_path": "scenarios/SCENARIO-01/patch.json"
+    },
+    {
+      "case_id": "SCENARIO-02",
+      "title": "Single Numerical Corruption",
+      "category": "Targeted numeric corruption",
+      "data_type": "Numerical amount",
+      "description": "One amount is multiplied by 100 and safely restored when evidence permits.",
+      "patch_path": "scenarios/SCENARIO-02/patch.json"
+    },
+    {
+      "case_id": "SCENARIO-03",
+      "title": "Partial Text Corruption",
+      "category": "Text-field integrity",
+      "data_type": "Text descriptions",
+      "description": "A controlled subset of descriptions is changed and restored from the source.",
+      "patch_path": "scenarios/SCENARIO-03/patch.json"
+    },
+    {
+      "case_id": "SCENARIO-04",
+      "title": "Complete Data Corruption",
+      "category": "Persistent pipeline defect",
+      "data_type": "All numerical amounts",
+      "description": "A persistent transformation affects all 5,000 amounts and triggers quarantine analysis.",
+      "patch_path": "scenarios/SCENARIO-04/patch.json"
+    },
+    {
+      "case_id": "SCENARIO-05",
+      "title": "Human Approval Required",
+      "category": "Unsafe destination conflict",
+      "data_type": "Conflicting amount update",
+      "description": "A destination-side conflict makes automatic overwrite unsafe and requires review.",
+      "patch_path": "scenarios/SCENARIO-05/patch.json"
+    }
+  ]
+}

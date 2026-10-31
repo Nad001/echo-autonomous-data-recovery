@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "pipeline_id": "finance-to-analytics",
+  "versions": [
+    {
+      "id": "transform-v1",
+      "name": "identity_minor_units",
+      "trusted": true,
+      "configuration": {
+        "amount_multiplier": 1,
+        "currency": "SAR"
+      }
+    },
+    {
+      "id": "transform-v2",
+      "name": "identity_minor_units_refactor",
+      "trusted": true,
+      "configuration": {
+        "amount_multiplier": 1,
+        "currency": "SAR"
+      }
+    },
+    {
+      "id": "transform-v3",
+      "name": "amount_normalization_candidate",
+      "trusted": false,
+      "configuration": {
+        "amount_multiplier": 1,
+        "currency": "SAR"
+      },
+      "note": "Trust must be established by testing; configuration metadata alone does not prove correctness."
+    }
+  ]
+}

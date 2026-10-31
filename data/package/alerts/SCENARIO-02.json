@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "incident_id": "INC-FEATURED-SINGLE",
+  "pipeline_id": "finance-to-analytics",
+  "run_id": "RUN-0020",
+  "detected_at": "2026-11-05T19:01:00Z",
+  "severity": "high",
+  "execution_status": "succeeded",
+  "integrity_status": "corrupted",
+  "monitor_findings": {"discrepancy_count": 1, "affected_record_ids": ["TX-000001"], "alert_rule": "source_destination_integrity"},
+  "message": "One transaction amount differed from the trusted source after synchronization."
+}

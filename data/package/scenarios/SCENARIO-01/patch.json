@@ -1,0 +1,7 @@
+{
+  "schema_version": "1.0",
+  "case_id": "SCENARIO-01",
+  "pipeline_id": "finance-to-analytics",
+  "execution_run_id": "RUN-SCENARIO-01",
+  "scenario_setup": {"kind": "healthy", "seed": 20310001}
+}

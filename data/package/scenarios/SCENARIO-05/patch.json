@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "case_id": "SCENARIO-05",
+  "pipeline_id": "finance-to-analytics",
+  "execution_run_id": "RUN-SCENARIO-05",
+  "scenario_setup": {"kind": "human_approval_required", "seed": 20310005, "first_modified_batch_seq": 1, "source_trust_state": "unavailable_for_conflicted_records"},
+  "destination_mutations": [{"record_id": "TX-000005", "field": "amount_halalas", "operation": "multiply", "factor": 100, "note": "conflicting destination value"}],
+  "observable_events": [
+    {"event_type": "destination_update_audit", "record_ids": ["TX-000005"], "timestamp": "2026-11-05T19:04:00Z", "actor": "manual_adjustment", "change_type": "destination_override"},
+    {"event_type": "source_snapshot_unavailable", "record_ids": ["TX-000005"]}
+  ]
+}

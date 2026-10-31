@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.0",
+  "cases": [
+    {"case_id": "SCENARIO-01", "split": "active", "patch_path": "scenarios/SCENARIO-01/patch.json"},
+    {"case_id": "SCENARIO-02", "split": "active", "patch_path": "scenarios/SCENARIO-02/patch.json"},
+    {"case_id": "SCENARIO-03", "split": "active", "patch_path": "scenarios/SCENARIO-03/patch.json"},
+    {"case_id": "SCENARIO-04", "split": "active", "patch_path": "scenarios/SCENARIO-04/patch.json"},
+    {"case_id": "SCENARIO-05", "split": "active", "patch_path": "scenarios/SCENARIO-05/patch.json"}
+  ]
+}

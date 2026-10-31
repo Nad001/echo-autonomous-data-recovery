@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "case_id": "SCENARIO-04",
+  "pipeline_id": "finance-to-analytics",
+  "execution_run_id": "RUN-SCENARIO-04",
+  "scenario_setup": {"kind": "complete_data_corruption", "seed": 20310004, "first_modified_batch_seq": 1},
+  "pipeline_mutations": [{"type": "set_transform", "transform_version_id": "transform-v3", "configuration_override": {"amount_multiplier": 1000}, "remains_active": true}]
+}

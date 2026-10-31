@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "case_id": "SCENARIO-02",
+  "pipeline_id": "finance-to-analytics",
+  "execution_run_id": "RUN-SCENARIO-02",
+  "scenario_setup": {"kind": "single_record_corruption", "seed": 20310002, "first_modified_batch_seq": 1},
+  "destination_mutations": [{"record_id": "TX-000001", "field": "amount_halalas", "operation": "multiply", "factor": 100, "expected_source_version": 1}]
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "incident_id": null,
+  "pipeline_id": "finance-to-analytics",
+  "run_id": "RUN-0020",
+  "detected_at": "2026-11-05T19:00:00Z",
+  "severity": "low",
+  "execution_status": "succeeded",
+  "integrity_status": "healthy",
+  "monitor_findings": {"discrepancy_count": 0, "affected_record_ids": [], "alert_rule": "source_destination_integrity"},
+  "message": "All synchronized records matched the trusted source. No investigation or recovery was required."
+}
