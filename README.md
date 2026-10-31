@@ -8,6 +8,8 @@ Successful synchronization does not guarantee correct data. Silent corruption ca
 
 ECHO is a general-purpose AI-assisted data integrity and recovery system. It compares trusted and destination data, explains discrepancies, and supports safe recovery when the evidence allows it.
 
+Finance is the example data flow used for this hackathon demonstration, not ECHO's only application.
+
 ## How It Works
 
 **Detect** → Compare synchronized data and identify what changed.
@@ -20,7 +22,11 @@ ECHO is a general-purpose AI-assisted data integrity and recovery system. It com
 
 ## Example Scenarios
 
-ECHO can handle healthy data, incorrect numerical values, partial text corruption, complete data corruption, and possible manual overrides or conflicting updates.
+- Healthy data with no recovery needed.
+- Incorrect numerical values that can be safely restored from trusted data.
+- Partial text corruption, such as truncation or unexpected replacements.
+- Complete data corruption requiring broad investigation and safety checks.
+- Possible manual overrides or conflicting updates that may require human review.
 
 ## Technology Stack
 
